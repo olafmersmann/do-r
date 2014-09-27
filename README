@@ -1,0 +1,7 @@
+do-r - easy R package development
+=================================
+
+R package development often consists of repetative and tedious tasks. do
+automates these tasks in a platform independent fashion. In the past I have
+used Makefiles for these but they are seldom portable and often fail in subtle
+ways.
