@@ -226,7 +226,7 @@ do_selfupgrade <- function(...) {
   if (file.exists("do.tmp"))
     die(100, "File 'do.tmp' from previous selfupgrade attempt exists. Please remove it and retry.")
 
-  download.file(SELFUPGRADE_URL, "do.tmp")
+  download.file(SELFUPGRADE_URL, "do.tmp", method="curl")
   if (file.exists("do.tmp")) {
     ## Check that we can parse the script.
     ok <- tryCatch({
